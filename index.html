@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Character Couner</h1>
+        <p>Your Message :</p>
+
+        <textarea id="message" name="message" rows="5" cols="40" oninput="updateCount()"></textarea>
+        <p class="counter"><span id="count">200</span> characters remaining out of 200</p>
+        <p id="warningMessage" class="warning"  style="color: red;"></p>
+    </div>
+
+    <script>
+        function updateCount() {
+            var textarea = document.getElementById("message");
+            var count = document.getElementById("count");
+            var warning = document.getElementById("warningMessage");
+
+            var maxLimit = 200;
+
+            if (textarea.value.length > maxLimit) {
+                textarea.value = textarea.value.substring(0, maxLimit);
+                warning.textContent = "Character limit is 200";
+                textarea.style.border = "2px solid red";
+            } else {
+                warning.textContent = "";
+                textarea.style.border = "1px solid #ccc";
+            }
+            count.textContent = maxLimit - textarea.value.length;
+        }
+
+    </script>
+</body>
+
+</html>
