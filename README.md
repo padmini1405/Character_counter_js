@@ -16,14 +16,7 @@ The maximum character limit is set to 200 characters.
 
 - HTML
 - CSS
-- JavaScript
-
-# Project Structure
-
-character-counter/
-│
-├── index.html
-├── style.css 
+- JavaScript 
 
 # Requirements Implemented
 
@@ -46,7 +39,7 @@ character-counter/
 
 # How to view
 
-You can access my website by visiting this [link]. Feel free to explore the content and get in touch.
+You can access my website by visiting this https://padmini1405.github.io/Character_counter_js/  Feel free to explore the content and get in touch.
 Created as a practice project to demonstrate DOM manipulation and real-time input handling in JavaScript.
 
 Developed by Padmini K
